@@ -1,0 +1,47 @@
+footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    padding: 10px 0;
+    background-color: var(--background-color); /* Match the theme */
+}
+
+.header-icons a img {
+    width: 24px;  /* Control the width of the icons */
+    height: auto;  /* Maintain the aspect ratio */
+    margin-right: 10px;
+}
+
+.header-container {
+    position: fixed;
+    top: 0; /* Adjusted to top */
+    left: 0;
+    right: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px; /* Ensures padding inside the container */
+}
+
+.home-link {
+    text-decoration: none;
+    color: var(--text-color); /* Adjust color to match theme */
+    font-size: 16px; /* Adjust size as needed */
+}
+
+.header-icons {
+    display: flex;
+    align-items: center;
+}
+
+.header-icons a img {
+    width: 24px; /* Adjust size as needed */
+    height: auto;
+    margin-right: 10px; /* Spacing between icons */
+}
+
+
+header {
+    font-weight: bold; /* Thicker text */
+}
