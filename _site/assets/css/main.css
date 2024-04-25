@@ -1,5 +1,26 @@
+.theme-light {
+    --background-color: #fff;
+    --text-color: #333;
+    --link-color: #0000EE;
+    --link-hover-color: #551A8B;
+    --highlight-color-1: #00FFFF;
+    --highlight-color-2: #ffaeee;
+}
+
+.theme-dark {
+    --background-color: #333;
+    --text-color: #fff;
+    --link-color: #ADD8E6;
+    --link-hover-color: #FFA07A;
+    --highlight-color-1: #006666;
+    --highlight-color-2: #6b0054;
+    mark {
+        background-color: darkblue;
+    }
+}
+
 body {
-    font-family: 'Courier New', Courier, monospace;
+    font-family: 'Roboto Slab', Roboto Slab, monospace;
     background-color: var(--background-color);
     color: var(--text-color);
     display: flex;
@@ -52,20 +73,6 @@ body {
 .toggle-theme {
     cursor: pointer;
     padding: 5px; /* Easier to click */
-}
-
-.theme-light {
-    --background-color: #fff;
-    --text-color: #333;
-    --link-color: #0000EE;
-    --link-hover-color: #551A8B;
-}
-
-.theme-dark {
-    --background-color: #333;
-    --text-color: #fff;
-    --link-color: #ADD8E6;
-    --link-hover-color: #FFA07A;
 }
 
 header {
