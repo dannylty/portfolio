@@ -1,0 +1,29 @@
+.theme-light {
+    --background-color: #fff;
+    --text-color: #333;
+    --link-color: #0000EE;
+    --link-hover-color: #551A8B;
+    --highlight-color-1: #00FFFF;
+    --highlight-color-2: #ffaeee;
+}
+
+.theme-dark {
+    --background-color: #333;
+    --text-color: #fff;
+    --link-color: #ADD8E6;
+    --link-hover-color: #FFA07A;
+    --highlight-color-1: #006666;
+    --highlight-color-2: #6b0054;
+    mark {
+        background-color: darkblue;
+    }
+}
+
+mark {
+    background-color:#fffeb7;
+}
+
+.toggle-theme {
+    cursor: pointer;
+    padding: 5px; /* Easier to click */
+}
