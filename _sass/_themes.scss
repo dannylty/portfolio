@@ -1,10 +1,14 @@
 .theme-light {
-    --background-color: #fff;
+    --background-color: #e8e8e8;
     --text-color: #333;
-    --link-color: #0000EE;
+    --link-color: #333;
     --link-hover-color: #551A8B;
     --highlight-color-1: #00FFFF;
     --highlight-color-2: #ffaeee;
+    --box-shadow-color: rgba(0, 0, 0, 0.2);
+    mark {
+        background-color:#fffeb7;
+    }
 }
 
 .theme-dark {
@@ -14,13 +18,10 @@
     --link-hover-color: #FFA07A;
     --highlight-color-1: #006666;
     --highlight-color-2: #6b0054;
+    --box-shadow-color: rgba(255, 255, 255, 0.1);
     mark {
         background-color: darkblue;
     }
-}
-
-mark {
-    background-color:#fffeb7;
 }
 
 .toggle-theme {

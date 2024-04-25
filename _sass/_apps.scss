@@ -1,0 +1,26 @@
+ul {
+    list-style-type: none;  /* Removes bullet points from the list */
+    padding: 0;  /* Removes padding */
+}
+
+.app-list-item {
+    display: flex;  /* Enables Flexbox */
+    justify-content: space-between;  /* Justifies content to each side */
+    align-items: center;  /* Aligns items vertically */
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.app-list-item a {
+    text-decoration: none;  /* Optional: removes underline from links */
+    color: var(--link-color);  /* Uses CSS variable for color */
+    flex: 0 0 auto;  /* Does not allow the link to grow or shrink */
+}
+
+.description {
+    text-align: right;  /* Right-aligns the text in the description */
+    flex-grow: 1;  /* Allows the description to take up remaining space */
+    margin-left: 20px;  /* Adds space between the link and the description */
+}
