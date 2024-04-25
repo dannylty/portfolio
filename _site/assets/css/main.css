@@ -19,6 +19,10 @@
     }
 }
 
+mark {
+    background-color:#fffeb7;
+}
+
 body {
     font-family: 'Roboto Slab', Roboto Slab, monospace;
     background-color: var(--background-color);
@@ -28,7 +32,7 @@ body {
     align-items: flex-start; /* Changed from center to start */
     height: 100vh;
     margin: 0;
-    padding-top: 50px; /* Added padding to push content below the header */
+    padding-top: 40px; /* Added padding to push content below the header */
 }
 
 .container {
