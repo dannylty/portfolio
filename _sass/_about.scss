@@ -25,7 +25,7 @@
     }
   }
   
-.about-content {
+.main-content {
   margin-left: 100px;  // Give space for the sidebar
   margin-right: 100px;
   padding: 20px;  // Add padding for the content
@@ -40,7 +40,7 @@
 }
 
 @media (max-width: 768px) {
-  .about-content {
+  .main-content {
     margin-top: 28px;
     margin-left: 10px;
     margin-right: 10px;
