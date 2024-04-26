@@ -3,7 +3,7 @@ layout: about
 title: About
 ---
 
-## Biography
+## <a id="biography" class="anchor"></a>Biography
 I will be graduating soon with a B.Comp. from the National University of Singapore.
 
 I have experience in and am comfortable with doing back-end development for large microservices.
@@ -12,7 +12,8 @@ In my free time, I build and tinker with computer stuff, and also play music as 
 
 <br>
 
-## Experience
+## <a id="experience" class="anchor"></a>Experience
+
 <div class="about-cell-container" markdown="1">
 ### Backend Software Engineer Intern – Shopee
 _May 2022 – Jan 2023_  

@@ -84,6 +84,8 @@ ul { list-style-type: none; /* Removes bullet points from the list */ padding: 0
 
 .about-content { margin-left: 100px; margin-right: 100px; padding: 20px; max-width: 600px; }
 
+.anchor { display: block; padding-top: 80px; margin-top: -80px; visibility: hidden; }
+
 @media (max-width: 768px) { .about-content { margin-top: 28px; margin-left: 10px; margin-right: 10px; font-size: 90%; } .sidebar { display: none; } }
 
 .about-cell-container { max-width: 600px; width: 100%; box-shadow: 0 0 10px var(--box-shadow-color); padding: 10px; box-sizing: border-box; background: var(--background-color); border-radius: 5px; margin-top: 5px; /* Additional margin if needed */ margin-bottom: 12px; padding-left: 20px; padding-right: 20px; }
