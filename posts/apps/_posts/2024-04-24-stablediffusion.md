@@ -1,8 +1,9 @@
 ---
 layout: post_app
-title:  "sd"
+title:  sd
 description: Stable Diffusion
 link: https://sd.dannylty.com
+image_path: /assets/images/sd.webp
 ---
 
 # Welcome
