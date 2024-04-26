@@ -22,6 +22,8 @@ a:hover { text-decoration: underline; color: var(--link-hover-color); }
 
 img { max-width: 100%; /* Makes sure images do not exceed the width of their container */ height: auto; /* Maintain aspect ratio */ }
 
+@media (max-width: 768px) { body { padding-top: 20px; } .container { max-width: 200px; padding: 10px; margin-top: 10px; box-shadow: 0 0 5px var(--box-shadow-color); } nav ul li { margin: 5px 0; } body, h1, h2, h3, p { font-size: 90%; } }
+
 footer { position: fixed; bottom: 0; width: 100%; text-align: center; padding: 10px 0; background-color: var(--background-color); font-size: 13px; }
 
 .header-icons { padding-right: 10px; }
@@ -30,7 +32,7 @@ footer { position: fixed; bottom: 0; width: 100%; text-align: center; padding: 1
 
 .header-container { position: fixed; top: 0; /* Adjusted to top */ left: 0; right: 0; display: flex; justify-content: space-between; align-items: center; padding: 10px; /* Ensures padding inside the container */ }
 
-.home-link { text-decoration: none; color: var(--text-color); /* Adjust color to match theme */ font-size: 16px; /* Adjust size as needed */ padding-left: 10px; }
+.home-link { text-decoration: none; color: var(--text-color); /* Adjust color to match theme */ padding-left: 10px; }
 
 .header-icons { display: flex; align-items: center; }
 
@@ -40,6 +42,8 @@ header { font-weight: bold; /* Thicker text */ }
 
 /* Additional styles for home container */
 .home-container { max-width: 600px; margin: auto; /* Centers the container */ position: relative; /* Adjust positioning */ top: -10%; /* Push down to middle */ padding: 10px; box-shadow: 0 0 10px var(--box-shadow-color); background: var(--background-color); border-radius: 5px; text-align: center; }
+
+@media (max-width: 768px) { .home-container { max-width: 400px; } }
 
 .home-container header, .home-container nav { margin-bottom: 20px; }
 

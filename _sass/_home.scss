@@ -11,6 +11,13 @@
     text-align: center;
 }
 
+// Media queries for phone viewport
+@media (max-width: 768px) {
+    .home-container {
+        max-width: 400px;
+    }
+}
+
 .home-container header,
 .home-container nav {
     margin-bottom: 20px;
