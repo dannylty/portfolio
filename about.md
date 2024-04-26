@@ -48,6 +48,11 @@ Updated as of 26 Apr 2024.
 <br>
 
 ## Projects
-asdf
-asdf
-asdf
+<ul>
+  {% for post in site.categories.projects %}
+    <li class="app-list-item">
+      <mark><a href="{{ post.link }}" target="_blank">{{ post.title }}</a></mark>
+      <span class="description">{{ post.description }}</span>
+    </li>
+  {% endfor %}
+</ul>
