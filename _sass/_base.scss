@@ -64,7 +64,11 @@ img {
 
     // Here you can add additional styles to make text smaller or adjust other elements
     // For example, reduce font size for smaller devices
-    body, h1, h2, h3, p {
+    body, h3, p {
         font-size: 90%;  // Reduce font size by 10%
+    }
+
+    h1, h2 {
+        font-size: 160%;
     }
 }
