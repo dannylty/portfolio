@@ -1,0 +1,42 @@
+.sidebar {
+    position: fixed;  // Fixed positioning relative to the viewport
+    margin-top: 24px;
+    left: 10px;
+    min-width: fit-content;  // Adjust the width of your sidebar
+    height: 400px;  // Full height minus header height
+    overflow-y: auto;  // Enable scroll if content is longer than the screen
+  
+    ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+  
+    li a {
+      display: block;
+      padding: 10px;
+      text-decoration: none;
+      color: var(--link-color);  // Use your CSS variable or a specific color
+  
+      &:hover {
+        text-decoration: underline;
+        color: var(--link-hover-color);
+      }
+    }
+  }
+  
+  .main-content {
+    margin-left: 100px;  // Give space for the sidebar
+    padding: 20px;  // Add padding for the content
+    max-width: 600px;
+  }
+  
+  @media (max-width: 768px) {
+    .main-content {
+        margin-top: 28px;
+    }
+
+    .sidebar {
+        margin-top: 48px;
+    }
+  }

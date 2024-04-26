@@ -22,7 +22,7 @@ a:hover { text-decoration: underline; color: var(--link-hover-color); }
 
 img { max-width: 100%; /* Makes sure images do not exceed the width of their container */ height: auto; /* Maintain aspect ratio */ }
 
-@media (max-width: 768px) { body { padding-top: 20px; } .container { max-width: 200px; padding: 10px; margin-top: 10px; box-shadow: 0 0 5px var(--box-shadow-color); } nav ul li { margin: 5px 0; } body, h3, p { font-size: 90%; } h1, h2 { font-size: 160%; } }
+@media (max-width: 768px) { body { padding-top: 20px; } .container { max-width: 200px; padding: 10px; margin-top: 10px; box-shadow: 0 0 5px var(--box-shadow-color); } nav ul li { margin: 5px 0; } body, h3, p { font-size: 90%; } h1 { font-size: 160%; } h2 { font-size: 120%; } }
 
 footer { position: fixed; bottom: 0; width: 100%; text-align: center; padding: 10px 0; background-color: var(--background-color); font-size: 13px; }
 
@@ -58,5 +58,17 @@ ul { list-style-type: none; /* Removes bullet points from the list */ padding: 0
 .app-list-item a { text-decoration: none; /* Optional: removes underline from links */ color: var(--link-color); /* Uses CSS variable for color */ flex: 0 0 auto; /* Does not allow the link to grow or shrink */ }
 
 .description { text-align: right; /* Right-aligns the text in the description */ flex-grow: 1; /* Allows the description to take up remaining space */ margin-left: 20px; /* Adds space between the link and the description */ }
+
+.sidebar { position: fixed; margin-top: 24px; left: 10px; min-width: fit-content; height: 400px; overflow-y: auto; }
+
+.sidebar ul { list-style: none; padding: 0; margin: 0; }
+
+.sidebar li a { display: block; padding: 10px; text-decoration: none; color: var(--link-color); }
+
+.sidebar li a:hover { text-decoration: underline; color: var(--link-hover-color); }
+
+.main-content { margin-left: 100px; padding: 20px; max-width: 600px; }
+
+@media (max-width: 768px) { .main-content { margin-top: 28px; } .sidebar { margin-top: 48px; } }
 
 /*# sourceMappingURL=main.css.map */
