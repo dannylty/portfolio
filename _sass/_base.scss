@@ -44,3 +44,27 @@ img {
     max-width: 100%;  /* Makes sure images do not exceed the width of their container */
     height: auto;  /* Maintain aspect ratio */
 }
+
+// Media queries for phone viewport
+@media (max-width: 768px) {
+    body {
+        padding-top: 20px;  // Reduced padding at the top
+    }
+
+    .container {
+        max-width: 200px;
+        padding: 10px;  // Reduced padding
+        margin-top: 10px;  // Reduced top margin
+        box-shadow: 0 0 5px var(--box-shadow-color);  // Subtler box shadow
+    }
+
+    nav ul li {
+        margin: 5px 0;  // Reduced margin between list items
+    }
+
+    // Here you can add additional styles to make text smaller or adjust other elements
+    // For example, reduce font size for smaller devices
+    body, h1, h2, h3, p {
+        font-size: 90%;  // Reduce font size by 10%
+    }
+}
