@@ -8,7 +8,7 @@
 
 .toggle-theme { cursor: pointer; padding: 5px; /* Easier to click */ }
 
-body { font-family: 'Roboto Slab', Roboto Slab, monospace; background-color: var(--background-color); color: var(--text-color); display: flex; justify-content: center; align-items: flex-start; /* Changed from center to start */ height: 100vh; margin: 0; padding-top: 40px; /* Added padding to push content below the header */ }
+body { font-family: 'Roboto Slab', Roboto Slab, monospace; background-color: var(--background-color); color: var(--text-color); display: flex; justify-content: center; align-items: flex-start; /* Changed from center to start */ min-height: 400px; margin: 0; margin-bottom: 60px; padding-top: 40px; /* Added padding to push content below the header */ }
 
 .container { max-width: 600px; width: 100%; box-shadow: 0 0 10px var(--box-shadow-color); padding: 20px; box-sizing: border-box; background: var(--background-color); border-radius: 5px; margin-top: 20px; /* Additional margin if needed */ }
 
@@ -32,7 +32,7 @@ footer { position: fixed; bottom: 0; width: 100%; text-align: center; padding: 1
 
 .header-container { position: fixed; top: 0; /* Adjusted to top */ left: 0; right: 0; display: flex; justify-content: space-between; align-items: center; padding: 10px; /* Ensures padding inside the container */ }
 
-.home-link { text-decoration: none; color: var(--text-color); /* Adjust color to match theme */ padding-left: 10px; }
+.home-link { text-decoration: none; color: var(--text-color); /* Adjust color to match theme */ padding: 5px; padding-left: 10px; }
 
 .header-icons { display: flex; align-items: center; }
 
@@ -41,7 +41,7 @@ footer { position: fixed; bottom: 0; width: 100%; text-align: center; padding: 1
 header { font-weight: bold; /* Thicker text */ }
 
 /* Additional styles for home container */
-.home-container { max-width: 600px; margin: auto; /* Centers the container */ position: relative; /* Adjust positioning */ top: -10%; /* Push down to middle */ padding: 10px; box-shadow: 0 0 10px var(--box-shadow-color); background: var(--background-color); border-radius: 5px; text-align: center; }
+.home-container { max-width: 600px; margin: auto; /* Centers the container */ position: relative; /* Adjust positioning */ top: -2%; /* Push down to middle */ padding: 10px; box-shadow: 0 0 10px var(--box-shadow-color); background: var(--background-color); border-radius: 5px; text-align: center; }
 
 @media (max-width: 768px) { .home-container { max-width: 400px; } }
 
@@ -67,8 +67,16 @@ ul { list-style-type: none; /* Removes bullet points from the list */ padding: 0
 
 .sidebar li a:hover { text-decoration: underline; color: var(--link-hover-color); }
 
-.main-content { padding: 20px; max-width: 600px; }
+.main-content { margin-left: 100px; margin-right: 100px; padding: 20px; max-width: 600px; }
 
-@media (max-width: 768px) { .main-content { margin-top: 28px; } .sidebar { display: none; } }
+@media (max-width: 768px) { .main-content { margin-top: 28px; margin-left: 50px; margin-right: 50px; } .sidebar { display: none; } }
+
+.about-cell-container { max-width: 600px; width: 100%; box-shadow: 0 0 10px var(--box-shadow-color); padding: 10px; box-sizing: border-box; background: var(--background-color); border-radius: 5px; margin-top: 5px; /* Additional margin if needed */ margin-bottom: 12px; padding-left: 20px; padding-right: 20px; }
+
+.about-cell-container ul { list-style: disc; list-style-position: inside; padding: 0; margin: 3px; }
+
+.about-cell-container li { margin: 10px 0; font-size: 90%; }
+
+.about-cell-container h3, .about-cell-container p { margin-top: 5px; margin-bottom: 5px; }
 
 /*# sourceMappingURL=main.css.map */

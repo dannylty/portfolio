@@ -5,8 +5,9 @@ body {
     display: flex;
     justify-content: center;
     align-items: flex-start; /* Changed from center to start */
-    height: 100vh;
+    min-height: 400px;
     margin: 0;
+    margin-bottom: 60px;
     padding-top: 40px; /* Added padding to push content below the header */
 }
 
