@@ -4,6 +4,6 @@ title: "main"
 subtitle: "Hi"
 ---
 
-If you want to use my apps, <mark><a href="{{ 'apps.html' | relative_url }}">go here</a></mark>.
+<mark><a href="{{ 'apps.html' | relative_url }}">my apps</a></mark>
 
-If you want to find out more about me, <mark><a href="{{ 'about.html' | relative_url }}">go here</a></mark>.
+<mark><a href="{{ 'about.html' | relative_url }}">about me</a></mark>
