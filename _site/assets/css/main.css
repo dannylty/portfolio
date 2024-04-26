@@ -67,8 +67,8 @@ ul { list-style-type: none; /* Removes bullet points from the list */ padding: 0
 
 .sidebar li a:hover { text-decoration: underline; color: var(--link-hover-color); }
 
-.main-content { margin-left: 100px; padding: 20px; max-width: 600px; }
+.main-content { padding: 20px; max-width: 600px; }
 
-@media (max-width: 768px) { .main-content { margin-top: 28px; } .sidebar { margin-top: 48px; } }
+@media (max-width: 768px) { .main-content { margin-top: 28px; } .sidebar { display: none; } }
 
 /*# sourceMappingURL=main.css.map */
