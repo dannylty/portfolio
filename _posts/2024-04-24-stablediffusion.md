@@ -1,7 +1,7 @@
 ---
 layout: post_app
-title:  "stable diffusion"
-description: SD Models Hosted on GPU
+title:  "sd"
+description: Stable Diffusion
 link: https://sd.dannylty.com
 ---
 
