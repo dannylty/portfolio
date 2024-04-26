@@ -82,7 +82,7 @@ ul { list-style-type: none; /* Removes bullet points from the list */ padding: 0
 
 .sidebar li a:hover { text-decoration: underline; color: var(--link-hover-color); }
 
-.main-content { margin-left: 100px; margin-right: 100px; padding: 20px; max-width: 600px; }
+.main-content { margin-left: 130px; margin-right: 130px; padding: 20px; max-width: 600px; }
 
 .anchor { display: block; padding-top: 80px; margin-top: -80px; visibility: hidden; }
 
