@@ -32,6 +32,13 @@
   max-width: 600px;
 }
 
+.anchor {
+  display: block;
+  padding-top: 80px;
+  margin-top: -80px;
+  visibility: hidden;
+}
+
 @media (max-width: 768px) {
   .about-content {
     margin-top: 28px;
