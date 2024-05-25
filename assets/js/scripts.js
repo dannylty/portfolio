@@ -1,7 +1,8 @@
-// Immediately-invoked function to set the theme as soon as possible
+// Immediately-invoked function to set the theme and font as soon as possible
 (function() {
   const savedTheme = localStorage.getItem('theme') || 'theme-dark'; // Default to dark theme
-  document.body.classList = savedTheme;
+  const savedFont = localStorage.getItem('font') || 'font-roboto'; // Default to Roboto font
+  document.body.classList.add(savedTheme, savedFont);
 })();
 
 // The rest of your code can remain inside the DOMContentLoaded listener
@@ -19,6 +20,22 @@ document.addEventListener('DOMContentLoaded', () => {
       
       // Save the current theme to localStorage
       localStorage.setItem('theme', currentTheme);
+    });
+  }
+
+  // Font toggle button
+  const toggleFontButton = document.querySelector('.toggle-font');
+  if (toggleFontButton) {
+    toggleFontButton.addEventListener('click', () => {
+      let currentFont = document.body.classList.contains('font-roboto') ? 'font-roboto' : 'font-calibri';
+      
+      // Toggle the font
+      document.body.classList.toggle('font-roboto');
+      document.body.classList.toggle('font-calibri');
+      currentFont = document.body.classList.contains('font-roboto') ? 'font-roboto' : 'font-calibri';
+      
+      // Save the current font to localStorage
+      localStorage.setItem('font', currentFont);
     });
   }
 });
