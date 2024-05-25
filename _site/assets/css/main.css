@@ -6,7 +6,13 @@
 
 .theme-dark mark { background-color: darkblue; }
 
+.font-roboto { font-family: 'Roboto Slab', Roboto Slab, monospace; }
+
+.font-calibri { font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; }
+
 .toggle-theme { cursor: pointer; padding: 5px; /* Easier to click */ }
+
+.toggle-font { cursor: pointer; padding: 5px; }
 
 body { font-family: 'Roboto Slab', Roboto Slab, monospace; background-color: var(--background-color); color: var(--text-color); display: flex; justify-content: center; align-items: flex-start; /* Changed from center to start */ min-height: 400px; margin: 0; margin-bottom: 100px; padding-top: 40px; /* Added padding to push content below the header */ }
 

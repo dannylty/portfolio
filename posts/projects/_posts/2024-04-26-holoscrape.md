@@ -5,5 +5,7 @@ description: YouTube Scraper and Visualiser
 ---
 
 # holoscrape
-writing..
-26 apr 2024
+
+Writing as of 24 May.
+
+Refer to github.com/dannylty/holoscrape for now.

@@ -24,7 +24,20 @@
     }
 }
 
+.font-roboto {
+    font-family: 'Roboto Slab', Roboto Slab, monospace;
+}
+
+.font-calibri {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
 .toggle-theme {
     cursor: pointer;
     padding: 5px; /* Easier to click */
+}
+
+.toggle-font {
+    cursor: pointer;
+    padding: 5px;
 }
