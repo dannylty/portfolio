@@ -1,6 +1,6 @@
 // Immediately-invoked function to set the theme and font as soon as possible
 (function() {
-  const savedTheme = localStorage.getItem('theme') || 'theme-dark'; // Default to dark theme
+  const savedTheme = localStorage.getItem('theme') || 'theme-light'; // Default to dark theme
   const savedFont = localStorage.getItem('font') || 'font-roboto'; // Default to Roboto font
   document.body.classList.add(savedTheme, savedFont);
 })();
