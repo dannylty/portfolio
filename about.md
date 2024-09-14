@@ -4,7 +4,7 @@ title: About
 ---
 
 ## <a id="biography" class="anchor"></a>Biography
-I will be graduating soon with a B.Comp. from the National University of Singapore.
+I graduated with a B.Comp. from the National University of Singapore.
 
 I have experience in and am comfortable with doing back-end development for large microservices.
 
@@ -13,6 +13,13 @@ In my free time, I build and tinker with computer stuff, and also play music as 
 <br>
 
 ## <a id="experience" class="anchor"></a>Experience
+
+<div class="about-cell-container" markdown="1">
+### Backend Software Engineer – Shopee
+_May 2024 – Present  
+<div style="font-size:70%;">C++, Golang, Python, MySQL, protobuf, Redis</div>
+- &nbsp;In the Recommendation backend team.
+</div>
 
 <div class="about-cell-container" markdown="1">
 ### Backend Software Engineer Intern – Shopee
