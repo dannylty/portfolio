@@ -4,11 +4,12 @@ body {
     color: var(--text-color);
     display: flex;
     justify-content: center;
-    align-items: flex-start; /* Changed from center to start */
+    align-items: flex-start;
     min-height: 400px;
     margin: 0;
     margin-bottom: 100px;
-    padding-top: 40px; /* Added padding to push content below the header */
+    padding-top: 40px;
+    transition: background-color 0.3s ease, color 0.3s ease;
 }
 
 .container {
@@ -19,7 +20,7 @@ body {
     box-sizing: border-box;
     background: var(--background-color);
     border-radius: 5px;
-    margin-top: 20px; /* Additional margin if needed */
+    margin-top: 20px;
 }
 
 nav ul {
@@ -42,31 +43,28 @@ a:hover {
 }
 
 img {
-    max-width: 100%;  /* Makes sure images do not exceed the width of their container */
-    height: auto;  /* Maintain aspect ratio */
+    max-width: 100%;
+    height: auto;
 }
 
-// Media queries for phone viewport
 @media (max-width: 768px) {
     body {
-        padding-top: 20px;  // Reduced padding at the top
+        padding-top: 20px;
     }
 
     .container {
-        max-width: 200px;
-        padding: 10px;  // Reduced padding
-        margin-top: 10px;  // Reduced top margin
-        box-shadow: 0 0 5px var(--box-shadow-color);  // Subtler box shadow
+        max-width: 100%;
+        padding: 10px;
+        margin-top: 10px;
+        box-shadow: 0 0 5px var(--box-shadow-color);
     }
 
     nav ul li {
-        margin: 5px 0;  // Reduced margin between list items
+        margin: 5px 0;
     }
 
-    // Here you can add additional styles to make text smaller or adjust other elements
-    // For example, reduce font size for smaller devices
     body, h3, p {
-        font-size: 90%;  // Reduce font size by 10%
+        font-size: 90%;
     }
 
     h1 {
@@ -76,8 +74,4 @@ img {
     h2 {
         font-size: 120%;
     }
-}
-
-body { 
-    transition: background-color 0.3s ease, color 0.3s ease;
 }

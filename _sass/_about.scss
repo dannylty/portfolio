@@ -1,34 +1,34 @@
 .sidebar {
-    position: fixed;  // Fixed positioning relative to the viewport
+    position: fixed;
     margin-top: 24px;
     left: 10px;
-    min-width: fit-content;  // Adjust the width of your sidebar
-    height: 400px;  // Full height minus header height
-    overflow-y: auto;  // Enable scroll if content is longer than the screen
-  
+    min-width: fit-content;
+    height: 400px;
+    overflow-y: auto;
+
     ul {
       list-style: none;
       padding: 0;
       margin: 0;
     }
-  
+
     li a {
       display: block;
       padding: 10px;
       text-decoration: none;
-      color: var(--link-color);  // Use your CSS variable or a specific color
-  
+      color: var(--link-color);
+
       &:hover {
         text-decoration: underline;
         color: var(--link-hover-color);
       }
     }
   }
-  
+
 .main-content {
-  margin-left: 130px;  // Give space for the sidebar
+  margin-left: 130px;
   margin-right: 130px;
-  padding: 20px;  // Add padding for the content
+  padding: 20px;
   max-width: 600px;
 }
 
@@ -56,15 +56,12 @@
   max-width: 600px;
   width: 100%;
   box-shadow: 0 0 10px var(--box-shadow-color);
-  padding: 10px;
+  padding: 10px 20px;
   box-sizing: border-box;
   background: var(--background-color);
   border-radius: 5px;
-  margin-top: 5px; /* Additional margin if needed */
+  margin-top: 5px;
   margin-bottom: 12px;
-  padding-left: 20px;
-  padding-right:20px;
-  // 
 
   ul {
     list-style: disc;
@@ -82,4 +79,8 @@
     margin-top: 5px;
     margin-bottom: 5px;
   }
+}
+
+.tech-stack {
+  font-size: 70%;
 }

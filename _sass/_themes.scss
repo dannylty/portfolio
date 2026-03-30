@@ -32,12 +32,12 @@
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
-.toggle-theme {
-    cursor: pointer;
-    padding: 5px; /* Easier to click */
-}
-
+.toggle-theme,
 .toggle-font {
+    background: none;
+    border: none;
+    color: inherit;
+    font: inherit;
     cursor: pointer;
     padding: 5px;
 }

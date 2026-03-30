@@ -1,12 +1,12 @@
 ul {
-    list-style-type: none;  /* Removes bullet points from the list */
-    padding: 0;  /* Removes padding */
+    list-style-type: none;
+    padding: 0;
 }
 
 .app-list-item {
-    display: flex;  /* Enables Flexbox */
-    justify-content: space-between;  /* Justifies content to each side */
-    align-items: center;  /* Aligns items vertically */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     padding-left: 30px;
     padding-right: 30px;
     padding-top: 10px;
@@ -14,61 +14,61 @@ ul {
 }
 
 .app-list-item a {
-    text-decoration: none;  /* Optional: removes underline from links */
-    color: var(--link-color);  /* Uses CSS variable for color */
-    flex: 0 0 auto;  /* Does not allow the link to grow or shrink */
+    text-decoration: none;
+    color: var(--link-color);
+    flex: 0 0 auto;
 }
 
 .description {
-    text-align: right;  /* Right-aligns the text in the description */
-    flex-grow: 1;  /* Allows the description to take up remaining space */
-    margin-left: 20px;  /* Adds space between the link and the description */
+    text-align: right;
+    flex-grow: 1;
+    margin-left: 20px;
 }
 
 .app-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr)); // Creates a responsive grid with tiles at least 100px wide
-    gap: 10px; // Space between tiles
-    padding: 10px; // Padding around the grid container
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    gap: 10px;
+    padding: 10px;
 }
 
 .app-tile {
     display: flex;
     flex-direction: column;
-    align-items: center; // Center the items horizontally
-    text-align: center; // Center the text within each tile
+    align-items: center;
+    text-align: center;
 }
 
 .app-tile a:hover {
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); // Faint box shadow on hover
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 .app-tile a {
     text-decoration: none;
-    color: inherit; // Use the text color from the parent
+    color: inherit;
     padding: 10px;
 }
 
 .app-tile img {
-    width: 100px; // Make image fill the container, adjust or remove for fixed sizes
-    border-radius: 10px; // Optional: rounded corners for the images
+    width: 100px;
+    border-radius: 10px;
 }
 
 @media (max-width: 768px) {
     .app-tile img {
-        width: 50px; // Make image fill the container, adjust or remove for fixed sizes
-        border-radius: 10px; // Optional: rounded corners for the images
+        width: 50px;
+        border-radius: 10px;
     }
 }
+
 .app-title {
-    font-size: 0.9em; // Smaller font size for the title
-    margin-top: 5px; // Space between image and title
+    font-size: 0.9em;
+    margin-top: 5px;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 .app-description {
-    display: inline; // Hide descriptions or style as needed
-    font-size: 0.7em; // Smaller font size for the title
+    display: inline;
+    font-size: 0.7em;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
-
