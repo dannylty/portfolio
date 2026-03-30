@@ -32,6 +32,23 @@
   max-width: 600px;
 }
 
+.main-content.about-layout {
+  max-width: 960px;
+}
+
+.about-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 24px;
+  align-items: start;
+}
+
+@media (max-width: 768px) {
+  .about-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
 .anchor {
   display: block;
   padding-top: 80px;
