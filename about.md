@@ -3,9 +3,6 @@ layout: about
 title: About
 ---
 
-<div class="about-grid">
-<div class="about-col-left">
-
 ## <a id="biography" class="anchor"></a>Biography
 I graduated with a B.Comp. from the National University of Singapore.
 
@@ -16,17 +13,18 @@ In my free time, I build and tinker with computer stuff, and also play music as 
 <br>
 
 ## <a id="projects" class="anchor"></a>Projects
-<ul>
+<ul class="project-list">
   {% for post in site.categories.projects %}
-    <li class="app-list-item">
-      <mark><a href="{{ post.url }}">{{ post.title }}</a></mark>
-      <span class="description">{{ post.description }}</span>
+    <li class="project-list-item">
+      <a href="{{ post.url }}">
+        <mark>{{ post.title }}</mark>
+        <span class="description">{{ post.description }}</span>
+      </a>
     </li>
   {% endfor %}
 </ul>
 
-</div>
-<div class="about-col-right">
+<br>
 
 ## <a id="experience" class="anchor"></a>Experience
 
@@ -79,6 +77,3 @@ _Feb 2021 – May 2021_
 - &nbsp;Designed and implemented programs for large-scale text collection from online platforms.
 </div>
 Updated as of 12 Jan 2026.
-
-</div>
-</div>
