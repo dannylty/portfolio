@@ -1,9 +1,6 @@
-(function() {
-  const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
-  const savedTheme = localStorage.getItem('theme') || (prefersDark ? 'theme-dark' : 'theme-light');
-  const savedFont = localStorage.getItem('font') || 'font-roboto';
-  document.body.classList.add(savedTheme, savedFont);
-})();
+// NOTE: initial theme/font application lives inline at the top of <body>
+// (see _layouts/default.html) so it runs before first paint. Doing it here
+// instead caused a white flash for dark-mode users on every page load.
 
 document.addEventListener('DOMContentLoaded', () => {
   const toggleThemeButton = document.querySelector('.toggle-theme');

@@ -7,6 +7,18 @@
     <link rel="stylesheet" href="{{ '/assets/css/main.css' | relative_url }}">
 </head>
 <body>
+    <script>
+    // Theme/font applied inline, before any content paints. This used to live
+    // in scripts.js, which loads at the END of <body> -- so dark-mode visitors
+    // got a white flash on every page load (measured: no theme class at t+0ms,
+    // applied ~30ms later). Keep this here rather than moving it back.
+    (function() {
+      var prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+      var savedTheme = localStorage.getItem('theme') || (prefersDark ? 'theme-dark' : 'theme-light');
+      var savedFont = localStorage.getItem('font') || 'font-roboto';
+      document.body.classList.add(savedTheme, savedFont);
+    })();
+    </script>
     {% include header.html %}
     {{ content }}
     {% include footer.html %}
