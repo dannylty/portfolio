@@ -29,7 +29,7 @@ In my free time, I build and tinker with computer stuff, and also play music as 
 ## <a id="experience" class="anchor"></a>Experience
 
 <div class="about-cell-container" markdown="1">
-### Software Engineer (Backend) – ByteDance
+### Software Engineer (Backend) – TikTok
 _Oct 2025 – Present_
 <div class="tech-stack">Python, Java, Kafka, Redis, Hive, Flink, HDFS, Spark, SQL</div>
 - &nbsp;Architected the real-time data infrastructure for TikTok's AI Search Cards, replacing legacy batch indexing. Orchestrated the end-to-end ingestion and cross-region replication of search impression data, stabilising GPU compute usage, improving data freshness, reducing maintenance overhead by 40%.
