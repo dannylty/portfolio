@@ -19,7 +19,16 @@
       document.documentElement.classList.add(savedTheme, savedFont);
     })();
     </script>
-    <link rel="stylesheet" href="{{ '/assets/css/main.css' | relative_url }}">
+    {%- comment -%}
+      ?v= is a cache buster, and it is load-bearing. nginx serves CSS with
+      max-age=86400 but HTML with no Cache-Control, so without this a deploy
+      lands new HTML against a returning visitor's 24-hour-old CSS. That
+      half-applied state is exactly how the theme fix broke: the HTML put the
+      theme class on <html>, but the stale CSS had no `html {background-color}`
+      rule to colour it, so the white flash came back. site.time changes every
+      build, so the URL changes whenever the CSS could have.
+    {%- endcomment -%}
+    <link rel="stylesheet" href="{{ '/assets/css/main.css' | relative_url }}?v={{ site.time | date: '%s' }}">
 </head>
 <body>
     {% include header.html %}
