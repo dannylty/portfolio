@@ -4,21 +4,24 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>{{ page.title }} | {{ site.title }}</title>
-    <link rel="stylesheet" href="{{ '/assets/css/main.css' | relative_url }}">
-</head>
-<body>
     <script>
-    // Theme/font applied inline, before any content paints. This used to live
-    // in scripts.js, which loads at the END of <body> -- so dark-mode visitors
-    // got a white flash on every page load (measured: no theme class at t+0ms,
-    // applied ~30ms later). Keep this here rather than moving it back.
+    // Must stay in <head>, on <html>, and inline -- all three matter.
+    // <head>: runs before the browser paints anything, so there's no flash.
+    // <html>: the root element carries the theme vars, so _base.scss can
+    //   colour it immediately (body alone is too late -- the root paints first
+    //   and would show default white between pages).
+    // inline: an external file is a second round-trip; the page can paint
+    //   before it lands.
     (function() {
       var prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
       var savedTheme = localStorage.getItem('theme') || (prefersDark ? 'theme-dark' : 'theme-light');
       var savedFont = localStorage.getItem('font') || 'font-roboto';
-      document.body.classList.add(savedTheme, savedFont);
+      document.documentElement.classList.add(savedTheme, savedFont);
     })();
     </script>
+    <link rel="stylesheet" href="{{ '/assets/css/main.css' | relative_url }}">
+</head>
+<body>
     {% include header.html %}
     {{ content }}
     {% include footer.html %}
